@@ -1,0 +1,10 @@
+# Root Netlify & Vercel Configuration
+[build]
+  base = "frontend"
+  publish = "dist"
+  command = "npm run build"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
